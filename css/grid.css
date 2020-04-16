@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    text-align: center;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container{
+    margin: auto;
+    width: 515px;
+    height: 515px;
+    background-color: #bbada0;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.grid-container .grid-row{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.grid-container .grid-row .grid-cell{
+    width: 110px;
+    height: 110px;
+    margin: 8px;
+    float: left;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    font-size: 50px;
+    padding-top: 18px;
+    text-align: center;
+    color: #f9f6f2;
+}
+.grid-container .grid-row .type-2{
+    background-color: #eee4da;
+    color: #776e65;
+}
+.grid-container .grid-row .type-4{
+    background-color: #ede0c8;
+    color: #776e65;
+}
+.grid-container .grid-row .type-8{
+    background-color: #f2b179;
+    color: #f9f6f2;
+}
+.grid-container .grid-row .type-16{
+    color: #f9f6f2;
+    background: #f59563;
+}
+.grid-container .grid-row .type-32{
+    color: #f9f6f2;
+    background: #f67c5f;
+}
+.grid-container .grid-row .type-64{
+    color: #f9f6f2;
+    background: #f65e3b;
+}
+.grid-container .grid-row .type-128{
+    color: #f9f6f2;
+    background: #edcf72;
+    padding-top: 18px;
+    font-size: 50px;
+}
+.grid-container .grid-row .type-256{
+    color: #f9f6f2;
+    background: #edcc61;
+    padding-top: 18px;
+    font-size: 50px;
+}
+.grid-container .grid-row .type-512{
+    color: #f9f6f2;
+    background: #edc850;
+    padding-top: 18px;
+    font-size: 50px;
+}
+.grid-container .grid-row .type-1024{
+    color: #f9f6f2;
+    background: #edc53f;
+    padding-top: 25px;
+    font-size: 40px;
+}
+.grid-container .grid-row .type-2048{
+    color: #f9f6f2;
+    background: #edc22e;
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+
+.controls{
+    margin-top: 30px;
+    height: 138px;
+    cursor: pointer;
+}
+
+.controls .grid-row .grid-cell:hover{
+    background-color: #f2b179;
+    color: #f9f6f2;
+}
