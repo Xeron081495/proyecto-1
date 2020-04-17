@@ -6,6 +6,12 @@ body{
 
 *{
     font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .grid-container{
@@ -34,6 +40,7 @@ body{
     padding-top: 18px;
     text-align: center;
     color: #f9f6f2;
+    font-weight: bold;
 }
 .grid-container .grid-row .type-2{
     background-color: #eee4da;
