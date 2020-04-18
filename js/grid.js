@@ -29,16 +29,10 @@ class Grid{
     setCelda(valor,x,y){
         this.grilla[x][y] = new Celda(valor,x,y);
         this.grafica.setCelda(valor,x,y);
-
-        /*console.log("------ empieza matriz ------"); 
-        for(let i=0; i<this.size; i++){
-            console.log("------ fila ------"); 
-            for(let j=0; j<this.size; j++){
-                console.log(this.grilla[i][j]); 
-            }
-        }
-        console.log("--------fin matriz---------"); */
-
+    }
+    setCeldaEfecto(valor,x,y){
+        this.grilla[x][y] = new Celda(valor,x,y);
+        this.grafica.setCeldaEfecto(valor,x,y);
     }
     deleteCelda(x,y){
         this.grilla[x][y] = null;
@@ -69,8 +63,7 @@ class Grid{
             if(this.getCelda(fil,col)==null){
                 esta = true;
                 const val = Math.floor(Math.random() * 2)+1;
-                this.setCelda(val*2,fil,col);
-                console.log("Nuevo en "+(fil+1)+":"+(col+1));
+                this.setCeldaEfecto(val*2,fil,col);
             }
 
             if(cont==1000) esta = true;

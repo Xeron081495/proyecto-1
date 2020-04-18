@@ -15,7 +15,13 @@ class Grafica{
         const idCelda = 'cell-'+x+'-'+y+'';
         this.deleteCelda(x,y);
         document.getElementById(idCelda).innerText = valor;
-        $('#'+idCelda).addClass('type-'+valor);
+        $('#'+idCelda).addClass('type-'+valor+'');
+    }
+
+    setCeldaEfecto(valor,x,y){
+        this.setCelda(valor,x,y);
+        const idCelda = 'cell-'+x+'-'+y+'';
+        $('#'+idCelda).addClass('animated fadeIn');
     }
 
 } // GraficaClass
