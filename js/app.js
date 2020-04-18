@@ -2,16 +2,16 @@
 const grilla = new Grid(4);
 
 function moverDerecha(){
-    grilla.moverDerecha();
+    grilla.mover(new MovimientoDerecha(grilla));
 }
 function moverIzquierda(){
-    grilla.moverIzquierda();
+    grilla.mover(new MovimientoIzquierda(grilla));
 }
 function moverArriba(){
-    grilla.moverArriba();
+    grilla.mover(new MovimientoArriba(grilla));
 }
 function moverAbajo(){
-    grilla.moverAbajo();
+    grilla.mover(new MovimientoAbajo(grilla));
 }
 
 
