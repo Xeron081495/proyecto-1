@@ -43,9 +43,13 @@ class Grid{
     }   
 
     mover(movimiento){
-        movimiento.desplazar();
-        movimiento.colisionar();
-        this.agregarNuevo();
+        const huboMovimientos = movimiento.desplazar();
+        const huboColisiones = movimiento.colisionar();
+        if(huboMovimientos || huboColisiones){
+            this.agregarNuevo();
+        }else{
+            alert('No hay celdas a mover/colisionar');
+        }
     }
     
     /**

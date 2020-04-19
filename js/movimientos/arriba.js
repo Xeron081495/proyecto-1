@@ -2,6 +2,7 @@
 class MovimientoArriba extends Movimiento{
 
     desplazar(){
+        let cambio = false; 
 
         for(let col=0; col<this.grid.size; col++){
             let pos = 0;
@@ -30,6 +31,7 @@ class MovimientoArriba extends Movimiento{
                     if(listo){
                         this.intercambiar(this.grid.getCelda(cursor,col),this.grid.getCelda(pos,col),pos,col);
                         pos++;
+                        cambio = true;
                     // no hay un elemento adelante, asi que termino y cambio de fila
                     }else
                         seguir = false;                    
@@ -38,13 +40,17 @@ class MovimientoArriba extends Movimiento{
                 }else
                     pos++;
         }
+        return cambio;
     }
 
     colisionar(){
+        let cambio = false;
         for(let c=0; c<this.grid.size; c++)
             for(let f=0; f<this.grid.size-1; f++)
-                if(this.combinar(this.grid.getCelda(f+1,c),this.grid.getCelda(f,c),f,c)) 
+                if(this.combinar(this.grid.getCelda(f+1,c),this.grid.getCelda(f,c),f,c)){
+                    cambio = true;
                     this.desplazar();
+                } 
     }
 
 }
