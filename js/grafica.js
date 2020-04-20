@@ -1,8 +1,10 @@
 class Grafica{
     valores;
+    size;
 
-    constructor(valores){
+    constructor(size,valores){
         this.valores = valores;
+        this.size = size;
     }
 
     deleteCelda(x,y){
@@ -10,6 +12,7 @@ class Grafica{
         document.getElementById(idCelda).innerText = '';
         for(let valor of this.valores)
             $('#'+idCelda).removeClass('type-'+valor);
+        $('#'+idCelda).removeClass('animated fadeIn');
     }
     setCelda(valor,x,y){
         const idCelda = 'cell-'+x+'-'+y+'';
