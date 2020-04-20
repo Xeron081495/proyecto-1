@@ -10,6 +10,9 @@ class Grafica{
     actualizarPuntaje(puntaje){
         document.getElementById('puntaje-actual').innerText = puntaje;
     }
+    actualizarRecord(puntaje){
+        document.getElementById('puntaje-record').innerText = puntaje;
+    }
 
     deleteCelda(x,y){
         const idCelda = 'cell-'+x+'-'+y+'';

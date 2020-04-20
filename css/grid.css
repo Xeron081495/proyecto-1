@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
 
 body{
     text-align: center;
@@ -17,11 +19,20 @@ body{
 header{
     margin: auto;
     width: 515px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+header h1{
+    font-size: 55px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Giga', sans-serif;
+
 }
 
 header .puntaje{
     padding: 2px 5px;
-    width: 110px;
+    width: 49%;
     background-color: #bbada0;
     border-radius: 10px;
 }
@@ -154,6 +165,30 @@ header .puntaje .valor{
 }
 
 @media only screen and (max-width: 575px) {
+
+    header{
+        width: 320px;
+    }
+    
+    header h1{
+        font-size: 35px;    
+    }
+    header .puntaje{
+        padding: 2px 4px;
+        width: 48%;
+        border-radius: 5px;
+    }
+
+    header .puntaje .titulo{
+        font-size: 10px;
+    }
+    
+    
+    header .puntaje .valor{
+        font-size: 20px;
+    }
+    
+    
     
     .grid-container{
         margin: auto;

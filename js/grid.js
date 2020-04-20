@@ -3,7 +3,7 @@ class Grid{
     size; // number
     grafica; // clase de tipo Grafica
     save; // clase de tipo Save
-    puntaje = 0;
+    puntaje; //clas que controla puntajes
 
     constructor(size){
 
@@ -16,6 +16,9 @@ class Grid{
         //crea la clase para guardar movimientos
         this.save = new Save(size,this.grafica);
         this.grilla = this.save.load();
+
+        //crea clase puntaje
+        this.puntaje = new Puntaje(this,0);
 
         // creo la primer celda del juego
         this.agregarNuevo();
@@ -46,16 +49,11 @@ class Grid{
         const puntaje = movimiento.colisionar();
         if(huboMovimientos || puntaje>0){
             this.agregarNuevo();
-            this.actualizarPuntaje(puntaje)
+            this.puntaje.actualizar(puntaje);
             //this.saveGame();
         }else{
             alert('No hay celdas a mover/colisionar');
         }
-    }
-
-    actualizarPuntaje(puntaje){
-        this.puntaje+=puntaje;
-        this.grafica.actualizarPuntaje(this.puntaje);
     }
     
     /**
