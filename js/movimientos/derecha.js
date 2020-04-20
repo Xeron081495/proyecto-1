@@ -44,14 +44,17 @@ class MovimientoDerecha extends Movimiento{
     }
 
     colisionar(){
+        let puntaje_total = 0;
         let cambio = false;
         for(let f=0; f<this.grid.size; f++)
-            for(let c=this.grid.size-1; c>0; c--)
-                if(this.combinar(this.grid.getCelda(f,c-1),this.grid.getCelda(f,c),f,c)){
-                    cambio = true;
+            for(let c=this.grid.size-1; c>0; c--){
+                const puntaje = this.combinar(this.grid.getCelda(f,c-1),this.grid.getCelda(f,c),f,c);
+                if(puntaje>0){
                     this.desplazar();
-                }         
-        return cambio;
+                    puntaje_total+=puntaje;
+                }
+            }
+        return puntaje_total;
     }
 
 }
