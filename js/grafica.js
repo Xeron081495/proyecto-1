@@ -7,6 +7,10 @@ class Grafica{
         this.size = size;
     }
 
+    actualizarPuntaje(puntaje){
+        document.getElementById('puntaje-actual').innerText = puntaje;
+    }
+
     deleteCelda(x,y){
         const idCelda = 'cell-'+x+'-'+y+'';
         document.getElementById(idCelda).innerText = '';

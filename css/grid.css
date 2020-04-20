@@ -14,6 +14,38 @@ body{
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
+header{
+    margin: auto;
+    width: 515px;
+}
+
+header .puntaje{
+    padding: 2px 5px;
+    width: 110px;
+    background-color: #bbada0;
+    border-radius: 10px;
+}
+
+header .puntaje .titulo{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    clear: both;
+}
+
+
+header .puntaje .valor{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    clear: both;
+}
+
+
 .grid-container{
     margin: auto;
     width: 515px;

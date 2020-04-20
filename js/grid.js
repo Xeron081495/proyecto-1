@@ -46,11 +46,16 @@ class Grid{
         const puntaje = movimiento.colisionar();
         if(huboMovimientos || puntaje>0){
             this.agregarNuevo();
-            this.puntaje+=puntaje;
+            this.actualizarPuntaje(puntaje)
             //this.saveGame();
         }else{
             alert('No hay celdas a mover/colisionar');
         }
+    }
+
+    actualizarPuntaje(puntaje){
+        this.puntaje+=puntaje;
+        this.grafica.actualizarPuntaje(this.puntaje);
     }
     
     /**
