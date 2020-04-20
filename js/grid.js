@@ -1,22 +1,21 @@
 class Grid{
-    grilla;
-    size;
-    grafica;
+    grilla; //Matriz de tipo Celda 
+    size; // number
+    grafica; // clase de tipo Grafica
+    save; // clase de tipo Save
+    puntaje = 0;
 
     constructor(size){
+
         // seteo el tamaño de la grilla
         this.size = size;
 
-        //seteo la grilla
-        this.grilla = new Array(size);
-        for (var i = 0; i < size; i++) {
-            this.grilla[i] = new Array(size);
-            for (var j = 0; j < size; j++)
-                this.grilla[i][j] = null;
-        }
-
         //creo la grafica del juego
-        this.grafica = new Grafica([2,4,8,16,32,64,128,256,512,1024,2048]);
+        this.grafica = new Grafica(size,[2,4,8,16,32,64,128,256,512,1024,2048]);
+
+        //crea la clase para guardar movimientos
+        this.save = new Save(size,this.grafica);
+        this.grilla = this.save.load();
 
         // creo la primer celda del juego
         this.agregarNuevo();
@@ -38,15 +37,17 @@ class Grid{
         this.grilla[x][y] = null;
         this.grafica.deleteCelda(x,y);
     }
-    getSize(){
-        return this.size;
-    }   
+    saveGame(){        
+        this.save.save(this.grilla);
+    }
 
     mover(movimiento){
         const huboMovimientos = movimiento.desplazar();
-        const huboColisiones = movimiento.colisionar();
-        if(huboMovimientos || huboColisiones){
+        const puntaje = movimiento.colisionar();
+        if(huboMovimientos || puntaje>0){
             this.agregarNuevo();
+            this.puntaje+=puntaje;
+            //this.saveGame();
         }else{
             alert('No hay celdas a mover/colisionar');
         }
@@ -66,10 +67,14 @@ class Grid{
 
             if(this.getCelda(fil,col)==null){
                 esta = true;
-                const val = Math.floor(Math.random() * 2)+1;
-                this.setCeldaEfecto(val*2,fil,col);
+                const val = Math.floor(Math.random() * 4)+1;
+                if(val>=0 && val<3)
+                    this.setCeldaEfecto(2,fil,col); // 3 chances de 4 de que toque 2
+                else
+                    this.setCeldaEfecto(4,fil,col); // 3 chances de 4 de que toque 4
             }
 
+            //conta
             if(cont==1000) esta = true;
 
         }

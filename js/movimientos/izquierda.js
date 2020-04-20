@@ -44,15 +44,17 @@ class MovimientoIzquierda extends Movimiento{
     }
 
     colisionar(){
-        let cambio = false;
+        let puntaje_total = 0;
         for(let f=0; f<this.grid.size; f++)
-            for(let c=0; c<this.grid.size-1; c++)
-                if(this.combinar(this.grid.getCelda(f,c+1),this.grid.getCelda(f,c),f,c)){
+            for(let c=0; c<this.grid.size-1; c++){
+                const puntaje = this.combinar(this.grid.getCelda(f,c+1),this.grid.getCelda(f,c),f,c);
+                if(puntaje>0){
                     this.desplazar();
-                    cambio = true;
-                } 
-        return cambio;
-    }
+                    puntaje_total+=puntaje;
+                }
+            }
+        return puntaje_total;
+}
 
 }
 

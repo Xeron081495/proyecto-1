@@ -44,14 +44,16 @@ class MovimientoAbajo extends Movimiento{
     }
 
     colisionar(){
-        let cambio = false;
+        let puntaje_total = 0;
         for(let c=0; c<this.grid.size; c++)
-            for(let f=this.grid.size-1; f>0; f--)
-                if(this.combinar(this.grid.getCelda(f-1,c),this.grid.getCelda(f,c),f,c)) {
-                    cambio = true;
+            for(let f=this.grid.size-1; f>0; f--){
+                const puntaje = this.combinar(this.grid.getCelda(f-1,c),this.grid.getCelda(f,c),f,c);
+                if(puntaje>0){
                     this.desplazar();
-                } 
-        return cambio;
+                    puntaje_total+=puntaje;
+                }
+            }
+        return puntaje_total;
     }
 }
 

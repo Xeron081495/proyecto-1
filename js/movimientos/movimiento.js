@@ -17,12 +17,13 @@ class Movimiento{
     combinar(celda1, celda2, fil, col){
         if(celda1!=null && celda2!=null){
             if(celda1.getValor()==celda2.getValor()){
-                this.grid.setCelda(celda1.getValor()*2,fil,col);
+                const valor = celda1.getValor()*2;
+                this.grid.setCelda(valor,fil,col);
                 this.grid.deleteCelda(celda1.getFila(),celda1.getCol());
-                return true;
+                return valor;
             }
         }
-        return false;
+        return 0;
     }
     
     /**
