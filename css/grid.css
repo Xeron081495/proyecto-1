@@ -43,60 +43,59 @@ body{
     font-weight: bold;
 }
 .grid-container .grid-row .type-2{
-    background-color: #eee4da;
-    color: #776e65;
+    background-color: #eee4da !important;
+    color: #776e65 !important;;
 }
 .grid-container .grid-row .type-4{
-    background-color: #ede0c8;
-    color: #776e65;
+    background-color: #ede0c8 !important;
+    color: #776e65 !important;
 }
 .grid-container .grid-row .type-8{
-    background-color: #f2b179;
-    color: #f9f6f2;
+    background-color: #f2b179 !important;
+    color: #f9f6f2 !important;
 }
 .grid-container .grid-row .type-16{
-    color: #f9f6f2;
-    background: #f59563;
+    color: #f9f6f2 !important;
+    background: #f59563 !important;
 }
 .grid-container .grid-row .type-32{
-    color: #f9f6f2;
-    background: #f67c5f;
+    color: #f9f6f2 !important;
+    background: #f67c5f !important;
 }
 .grid-container .grid-row .type-64{
-    color: #f9f6f2;
-    background: #f65e3b;
+    color: #f9f6f2 !important;
+    background: #f65e3b !important;
 }
 .grid-container .grid-row .type-128{
-    color: #f9f6f2;
-    background: #edcf72;
+    color: #f9f6f2 !important;
+    background: #edcf72 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-256{
-    color: #f9f6f2;
-    background: #edcc61;
+    color: #f9f6f2 !important;
+    background: #edcc61 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-512{
-    color: #f9f6f2;
-    background: #edc850;
+    color: #f9f6f2 !important;
+    background: #edc850 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-1024{
-    color: #f9f6f2;
-    background: #edc53f;
+    color: #f9f6f2 !important;
+    background: #edc53f !important;
     padding-top: 25px;
     font-size: 40px;
 }
 .grid-container .grid-row .type-2048{
-    color: #f9f6f2;
-    background: #edc22e;
+    color: #f9f6f2 !important;
+    background: #edc22e !important;
     padding-top: 25px;
     font-size: 40px;
 }
-
 
 .controls{
     margin-top: 30px;
@@ -108,3 +107,51 @@ body{
     background-color: #f2b179;
     color: #f9f6f2;
 }
+
+
+
+@media only screen and (max-width: 1410px) {    
+}
+
+@media only screen and (max-width: 1199px) { 
+}
+
+@media only screen and (max-width: 991px) {	
+}
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .grid-container{
+        margin: auto;
+        width: 320px;
+        height: 320px;
+        background-color: #bbada0;
+        border-radius: 8px;
+        padding: 3px;
+    }
+    .grid-container .grid-row .grid-cell{
+        width: 70.5px;
+        height: 70.5px;
+        margin: 4px;
+        float: left;
+        background-color: #cdc1b4;
+        border-radius: 5px;
+        font-size: 35px;
+        padding-top: 10px;
+        text-align: center;
+        color: #f9f6f2;
+        font-weight: 500;
+    }
+    .controls{
+        margin-top: 30px;
+        height: 85px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
