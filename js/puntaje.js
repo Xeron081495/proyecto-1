@@ -11,7 +11,6 @@ class Puntaje{
     
 
     actualizar(puntaje){
-        console.log(this.puntaje);
         this.puntaje+=puntaje;
         this.grilla.grafica.actualizarPuntaje(this.puntaje);
         this.verificarRecord();

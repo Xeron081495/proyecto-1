@@ -13,7 +13,6 @@ class Grafica{
     actualizarRecord(puntaje){
         document.getElementById('puntaje-record').innerText = puntaje;
     }
-
     deleteCelda(x,y){
         const idCelda = 'cell-'+x+'-'+y+'';
         document.getElementById(idCelda).innerText = '';
@@ -33,5 +32,21 @@ class Grafica{
         const idCelda = 'cell-'+x+'-'+y+'';
         $('#'+idCelda).addClass('animated fadeIn');
     }
+
+    /*efectoColision(x,y){
+        const idCelda = 'cell-'+x+'-'+y+'';
+        $('#'+idCelda).removeClass('animated');
+        $('#'+idCelda).removeClass('animated shake');
+        $('#'+idCelda).addClass('animated shake');
+    }*/
+
+    efectoColision(x,y){
+        const celda = document.querySelector('#cell-'+x+'-'+y+'');
+        celda.classList.add('animated', 'shake');
+        setTimeout(function (){
+            celda.classList.remove('animated', 'shake');
+        },300);
+    }
+
 
 } // GraficaClass

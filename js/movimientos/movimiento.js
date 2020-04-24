@@ -20,6 +20,7 @@ class Movimiento{
                 const valor = celda1.getValor()*2;
                 this.grid.setCelda(valor,fil,col);
                 this.grid.deleteCelda(celda1.getFila(),celda1.getCol());
+                this.grid.grafica.efectoColision(fil,col);
                 return valor;
             }
         }
