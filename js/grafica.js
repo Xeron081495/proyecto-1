@@ -79,10 +79,15 @@ class GraficaActiva{
     //mostrar mensaje de que perdio
     reiniciar(){
         let mensaje = document.querySelector('#mensaje');
+        let ganaste = document.querySelector('.ganaste');
         mensaje.classList.add('d-none');
+        ganaste.classList.add('d-none');
         mensaje.classList.remove('animated', 'fadeIn');
         mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeOut');
+        ganaste.classList.remove('animated', 'fadeIn');
+        ganaste.classList.remove('animated', 'fadeOut');
+        ganaste.classList.add('animated', 'fadeOut');
         for(let i=0; i<this.size;i++)
             for(let j=0; j<this.size;j++)
                 this.deleteCelda(i,j);
