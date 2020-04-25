@@ -1,4 +1,4 @@
-class Grafica{
+class GraficaActiva{
     valores;
     size;
 
@@ -7,10 +7,13 @@ class Grafica{
         this.size = size;
     }
 
+
+    //a actualiza el puntaje actual
     actualizarPuntaje(puntaje){
         document.getElementById('puntaje-actual').innerText = puntaje;
     }
 
+    // Actualiza el record en pantalla
     actualizarRecord(puntaje){
         document.getElementById('puntaje-record').innerText = puntaje;
     }
@@ -57,5 +60,55 @@ class Grafica{
         },300);
     }
 
+    //mostrar mensaje de que perdio
+    setPerdida(){
+        let mensaje = document.querySelector('#mensaje');
+        mensaje.classList.remove('d-none');
+        mensaje.classList.add('animated', 'fadeIn');
+    }
+
+    //mostrar mensaje de que perdio
+    reiniciar(){
+        let mensaje = document.querySelector('#mensaje');
+        mensaje.classList.remove('animated', 'fadeIn');
+        mensaje.classList.add('animated', 'fadeOut');
+        for(let i=0; i<this.size;i++)
+            for(let j=0; j<this.size;j++)
+                this.deleteCelda(i,j);
+    }
+
 
 } // GraficaClass
+
+
+class GraficaInactiva{
+
+    //a actualiza el puntaje actual
+    actualizarPuntaje(puntaje){
+    }
+
+    // Actualiza el record en pantalla
+    actualizarRecord(puntaje){
+    }
+
+    // elimina una celda
+    deleteCelda(x,y){
+    }
+
+    // setea una celda en la pos (x,y) cun un valor
+    setCelda(valor,x,y){
+    }
+
+    //setea una celda con el efecto face in
+    setCeldaEfecto(valor,x,y){
+    }
+
+    // genera el efecto de colision en una celda
+    efectoColision(x,y){
+    }
+
+    // Retorna el div de la celda en x:y
+    getCelda(x,y){
+        return document.querySelector('#cell-'+x+'-'+y+'');
+    }
+}

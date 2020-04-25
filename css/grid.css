@@ -58,6 +58,7 @@ header .puntaje .valor{
 
 
 .grid-container{
+    position: relative;
     margin: auto;
     width: 515px;
     height: 515px;
@@ -138,6 +139,25 @@ header .puntaje .valor{
     background: #edc22e !important;
     padding-top: 25px;
     font-size: 40px;
+}
+
+.grid-container .mensaje{
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+}
+
+.grid-container .mensaje .frase{
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    color: #776e65;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.grid-container .mensaje .boton{
 }
 
 .controls{
