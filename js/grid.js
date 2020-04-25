@@ -135,7 +135,6 @@ class Grid{
                         //simulo movimiento a arriba
                         aux.mover(new MovimientoArriba(aux));
                         if(aux.compareTo(this))
-                            console.log("perdiste");   
                             this.grafica.setPerdida();
                     }
                 }  

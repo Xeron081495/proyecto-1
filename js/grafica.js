@@ -64,6 +64,7 @@ class GraficaActiva{
     setPerdida(){
         let mensaje = document.querySelector('#mensaje');
         mensaje.classList.remove('d-none');
+        mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeIn');
     }
 
@@ -71,6 +72,7 @@ class GraficaActiva{
     reiniciar(){
         let mensaje = document.querySelector('#mensaje');
         mensaje.classList.remove('animated', 'fadeIn');
+        mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeOut');
         for(let i=0; i<this.size;i++)
             for(let j=0; j<this.size;j++)
