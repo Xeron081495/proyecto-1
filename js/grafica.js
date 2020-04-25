@@ -69,8 +69,17 @@ class GraficaActiva{
     }
 
     //mostrar mensaje de que perdio
+    setGanado(){
+        let mensaje = document.querySelector('.ganaste');
+        mensaje.classList.remove('d-none');
+        mensaje.classList.remove('animated', 'fadeOut');
+        mensaje.classList.add('animated', 'fadeIn');
+    }
+
+    //mostrar mensaje de que perdio
     reiniciar(){
         let mensaje = document.querySelector('#mensaje');
+        mensaje.classList.add('d-none');
         mensaje.classList.remove('animated', 'fadeIn');
         mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeOut');

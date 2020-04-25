@@ -19,6 +19,8 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/591d68fa75.js" crossorigin="anonymous"></script>
 
+    <!-- share -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ea4976b59ff750012e54bbb&product=inline-share-buttons" async="async"></script>
 
     <title>Proyecto 1</title>
   </head>
@@ -65,6 +67,11 @@
       <div id="mensaje" class="mensaje col-12 h-100 m-0 text-center d-none">
         <div class="frase">¡Perdiste!</div>
         <button type="button" class="btn btn-lg btn-dark mt-5" onclick="reiniciar()">Volver a jugar</button>
+      </div>
+      <div id="mensaje" class="ganaste mensaje col-12 h-100 m-0 text-center">
+        <div class="frase">¡Ganaste!</div>
+        <button type="button" class="btn btn-lg btn-dark mt-4 mt-md-5" onclick="reiniciar()">Volver a jugar</button>
+        <div class="mt-5 sharethis-inline-share-buttons"></div>
       </div>
     </div>
 

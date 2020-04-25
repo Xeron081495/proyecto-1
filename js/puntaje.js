@@ -12,7 +12,7 @@ class Puntaje{
 
     actualizar(puntaje){
         this.puntaje+=puntaje;
-        this.grilla.grafica.actualizarPuntaje(this.puntaje);
+            this.grilla.grafica.actualizarPuntaje(this.puntaje);
         this.verificarRecord();
     }
 
@@ -27,7 +27,7 @@ class Puntaje{
         }
 
         localStorage.setItem('record-'+this.grilla.size,this.record);
-        this.grilla.grafica.actualizarRecord(this.record);
+            this.grilla.grafica.actualizarRecord(this.record);
 
     }
 

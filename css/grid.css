@@ -234,6 +234,14 @@ header .puntaje .valor{
         height: 85px;
         cursor: pointer;
     }
+
+    .grid-container .mensaje{
+    }
+    
+    .grid-container .mensaje .frase{
+        font-size: 55px;
+        margin-top: 35px;
+    }
 }
 
 @media only screen and (max-width: 360px) {

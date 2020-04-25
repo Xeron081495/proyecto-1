@@ -17,8 +17,8 @@ class Grid{
         this.save = new Save(size,this.grafica);
         this.grilla = this.save.load();
 
-        //crea clase puntaje
-        this.puntaje = new Puntaje(this,0);
+        //crea clase puntaje (la setea el usuario)
+        this.puntaje = null;
     }
 
     getCelda(x,y){
@@ -27,8 +27,8 @@ class Grid{
     setCelda(valor,x,y){
         this.grilla[x][y] = new Celda(valor,x,y);
         this.grafica.setCelda(valor,x,y);
-        if(valor==2048)
-            console.log('ganaste');
+        if(valor==64)
+            this.grafica.setGanado();
     }
     setCeldaEfecto(valor,x,y){
         this.grilla[x][y] = new Celda(valor,x,y);
@@ -47,9 +47,8 @@ class Grid{
         const puntaje = movimiento.colisionar(true);
         if(huboMovimientos || puntaje>0){
             this.agregarNuevo();
-            this.puntaje.actualizar(puntaje);
-        }else{
-            // no hacer nada
+            if(this.puntaje!=null)
+                this.puntaje.actualizar(puntaje);
         }
     }
 
