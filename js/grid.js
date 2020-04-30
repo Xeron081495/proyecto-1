@@ -27,7 +27,7 @@ class Grid{
     setCelda(valor,x,y){
         this.grilla[x][y] = new Celda(valor,x,y);
         this.grafica.setCelda(valor,x,y);
-        if(valor==64)
+        if(valor==2048)
             this.grafica.setGanado();
     }
     setCeldaEfecto(valor,x,y){
