@@ -1,6 +1,5 @@
 //creo la celda
-let size = 5
-let grilla = new Grid(size);
+let grilla = new Grid(4);
 grilla.puntaje = new Puntaje(grilla,0);
 grilla.agregarNuevo();
 grilla.agregarNuevo();
@@ -23,7 +22,7 @@ function moverAbajo(){
     grilla.verificarPerdida();
 }
 function reiniciar(){
-    grilla = new Grid(size);
+    grilla = new Grid(4);
     grilla.puntaje = new Puntaje(grilla,0);
     grilla.grafica.reiniciar();
     grilla.agregarNuevo();
