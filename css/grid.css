@@ -22,9 +22,13 @@ header{
     width: 515px;
     font-family: 'Lexend Giga', sans-serif;
 }
+header .icon-menu{
+    font-size: 20px;
+    margin-top: 7px !important;
+}
 
-header h1{
-    font-size: 55px;
+h1{
+    font-size: 50px;
     margin: 0px;
     padding: 0px;
     font-family: 'Lexend Giga', sans-serif;
@@ -34,13 +38,11 @@ header h1{
 header .puntaje{
     padding: 2px 5px;
     width: 49%;
-    background-color: #bbada0;
     border-radius: 10px;
 }
 
 header .puntaje .titulo{
     width: 100%;
-    color: white;
     text-transform: uppercase;
     text-align: center;
     font-size: 15px;
@@ -50,7 +52,6 @@ header .puntaje .titulo{
 
 header .puntaje .valor{
     width: 100%;
-    color: white;
     text-transform: uppercase;
     text-align: center;
     font-size: 28px;
@@ -63,7 +64,6 @@ header .puntaje .valor{
     margin: auto;
     width: 515px;
     height: 515px;
-    background-color: #bbada0;
     border-radius: 8px;
     padding: 5px;
 }
@@ -79,65 +79,29 @@ header .puntaje .valor{
     height: 110px;
     margin: 8px;
     float: left;
-    background-color: #cdc1b4;
     border-radius: 5px;
     font-size: 50px;
     padding-top: 18px;
     text-align: center;
-    color: #f9f6f2;
     font-weight: bold;
 }
-.grid-container .grid-row .type-2{
-    background-color: #eee4da !important;
-    color: #776e65 !important;;
-}
-.grid-container .grid-row .type-4{
-    background-color: #ede0c8 !important;
-    color: #776e65 !important;
-}
-.grid-container .grid-row .type-8{
-    background-color: #f2b179 !important;
-    color: #f9f6f2 !important;
-}
-.grid-container .grid-row .type-16{
-    color: #f9f6f2 !important;
-    background: #f59563 !important;
-}
-.grid-container .grid-row .type-32{
-    color: #f9f6f2 !important;
-    background: #f67c5f !important;
-}
-.grid-container .grid-row .type-64{
-    color: #f9f6f2 !important;
-    background: #f65e3b !important;
-}
 .grid-container .grid-row .type-128{
-    color: #f9f6f2 !important;
-    background: #edcf72 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-256{
-    color: #f9f6f2 !important;
-    background: #edcc61 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-512{
-    color: #f9f6f2 !important;
-    background: #edc850 !important;
     padding-top: 18px;
     font-size: 50px;
 }
 .grid-container .grid-row .type-1024{
-    color: #f9f6f2 !important;
-    background: #edc53f !important;
     padding-top: 25px;
     font-size: 40px;
 }
 .grid-container .grid-row .type-2048{
-    color: #f9f6f2 !important;
-    background: #edc22e !important;
     padding-top: 25px;
     font-size: 40px;
 }
@@ -145,7 +109,6 @@ header .puntaje .valor{
 .grid-container .mensaje{
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
 }
 
@@ -153,23 +116,14 @@ header .puntaje .valor{
     font-size: 70px;
     width: 100%;
     text-align: center;
-    color: #776e65;
     font-weight: bold;
     margin-top: 150px;
-}
-
-.grid-container .mensaje .boton{
 }
 
 .controls{
     margin-top: 30px;
     height: 138px;
     cursor: pointer;
-}
-
-.controls .grid-row .grid-cell:hover{
-    background-color: #f2b179;
-    color: #f9f6f2;
 }
 
 
@@ -213,7 +167,6 @@ header .puntaje .valor{
         margin: auto;
         width: 320px;
         height: 320px;
-        background-color: #bbada0;
         border-radius: 8px;
         padding: 3px;
     }
@@ -222,13 +175,19 @@ header .puntaje .valor{
         height: 70.5px;
         margin: 4px;
         float: left;
-        background-color: #cdc1b4;
         border-radius: 5px;
-        font-size: 35px;
-        padding-top: 10px;
+        font-size: 32px;
+        padding-top: 13px;
         text-align: center;
-        color: #f9f6f2;
         font-weight: 500;
+    }
+    .grid-container .grid-row .type-1024{
+        padding-top: 16px;
+        font-size: 28px;
+    }
+    .grid-container .grid-row .type-2048{
+        padding-top: 16px;
+        font-size: 25px;
     }
     .controls{
         margin-top: 30px;

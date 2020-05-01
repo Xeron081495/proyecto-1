@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+body{
+    background-color: #f5f5f5   !important;
+    color: #111 !important;
+}
+header h1{
+    color: #111;
+}
+
+
+header .puntaje{
+    background-color: #bbada0;
+}
+
+header .puntaje .titulo{
+    color: white;
+}
+
+
+header .puntaje .valor{
+    color: white;
+}
+
+
+.grid-container{
+    background-color: #bbada0;
+}
+
+
+.grid-container .grid-row .grid-cell{
+    background-color: #cdc1b4;
+    color: #f9f6f2;
+}
+.grid-container .grid-row .type-2{
+    background-color: #eee4da !important;
+    color: #776e65 !important;;
+}
+.grid-container .grid-row .type-4{
+    background-color: #ede0c8 !important;
+    color: #776e65 !important;
+}
+.grid-container .grid-row .type-8{
+    background-color: #f2b179 !important;
+    color: #f9f6f2 !important;
+}
+.grid-container .grid-row .type-16{
+    color: #f9f6f2 !important;
+    background: #f59563 !important;
+}
+.grid-container .grid-row .type-32{
+    color: #f9f6f2 !important;
+    background: #f67c5f !important;
+}
+.grid-container .grid-row .type-64{
+    color: #f9f6f2 !important;
+    background: #f65e3b !important;
+}
+.grid-container .grid-row .type-128{
+    color: #f9f6f2 !important;
+    background: #edcf72 !important;
+}
+.grid-container .grid-row .type-256{
+    color: #f9f6f2 !important;
+    background: #edcc61 !important;
+}
+.grid-container .grid-row .type-512{
+    color: #f9f6f2 !important;
+    background: #edc850 !important;
+}
+.grid-container .grid-row .type-1024{
+    color: #f9f6f2 !important;
+    background: #edc53f !important;
+}
+.grid-container .grid-row .type-2048{
+    color: #f9f6f2 !important;
+    background: #edc22e !important;
+}
+
+.grid-container .mensaje{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.grid-container .mensaje .frase{
+    color: #776e65;
+}
+
+.menu{
+    background-color: rgb(243, 237, 229) !important;
+}
+
+.menu .header-menu{
+    border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+.menu .opciones .opcion{
+    border: 1px solid white;
+}
