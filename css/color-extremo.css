@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+
+
+.menu{
+    background-color: #111 !important;
+}
+
+.menu .header-menu{
+    border-bottom: 1px solid #666;
+}
+
+
+body{
+    background-color: #000000 !important;
+    color: #c1c1c1   !important;
+}
+
+*{
+}
+
+
+header .puntaje{
+    background-color: #1d242c;
+    color: rgb(219, 219, 219);
+}
+
+header .puntaje .titulo{
+}
+
+
+header .puntaje .valor{
+}
+
+
+.grid-container{
+    background-color: #1d242c;
+}
+
+.grid-container .grid-row{
+}
+
+.grid-container .grid-row .grid-cell{
+    background-color: #111111;
+    color: #f9f6f2;
+}
+.grid-container .grid-row .type-2{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-4{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-8{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-16{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-32{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-64{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-128{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-256{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-512{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-1024{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+.grid-container .grid-row .type-2048{
+    background-color: #030303 !important;
+    color: #1ea7d1 !important;
+}
+
+.grid-container .mensaje{
+    background-color: #1b2024d2;
+}
+
+.grid-container .mensaje .frase{
+    color: #30a3b4;
+}
+
+.grid-container .mensaje .boton{
+    background-color: #718599;
+}

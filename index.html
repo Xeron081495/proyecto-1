@@ -30,7 +30,7 @@
       <div onclick="abrirMenu()" class="float-left text-center icon-menu col-1 m-0 p-0">
         <i class="fas fa-bars"></i>
       </div>
-      <h1 class="float-left text-center col-5 m-0 p-0">2048</h1>
+      <h1 class="float-left text-center col-5 m-0 p-0 mt-2">2048</h1>
       <div class="float-left col-6 p-0 m-0">
         <div class="puntaje d-inline-block">
           <div class="titulo clearfix">Puntaje</div>
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="menu h-100">
+    <div class="menu h-100 d-none">
       <header class="header-menu mt-4 mb-4 clearfix">
         <div onclick="ocultarMenu()" class="float-left text-center icon-menu col-1 m-0 p-0">
           <i class="fas fa-times"></i>
@@ -99,7 +99,12 @@
         <div class="title clearfix">Elegir color</div>
         <div class="opcion clasico" onclick="modoClasico()">Clásico</div>
         <div class="opcion oscuro" onclick="modoOscuro()">Oscuro</div>
-        <div class="opcion extremo">Estremo</div>
+        <div class="opcion extremo" onclick="modoExtremo()">Estremo</div>
+      </div>
+      <div class="opciones col-12 mt-5">
+        <div class="title clearfix">Mostrar direcciones</div>
+        <div class="opcion" onclick="mostrarTeclas()">Si</div>
+        <div class="opcion" onclick="ocultarTeclas()">No</div>
       </div>
     </div>
 
