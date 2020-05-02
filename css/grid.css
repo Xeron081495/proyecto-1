@@ -18,6 +18,7 @@ header{
 header .icon-menu{
     font-size: 30px;
     margin-top: 12px !important;
+    cursor: pointer;
 }
 
 h1{
