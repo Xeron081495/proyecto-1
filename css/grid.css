@@ -75,35 +75,11 @@ header .puntaje .valor{
 }
 
 .grid-container .grid-row .grid-cell{
-    width: 110px;
-    height: 110px;
     margin: 8px;
     float: left;
     border-radius: 5px;
-    font-size: 50px;
-    padding-top: 18px;
     text-align: center;
     font-weight: bold;
-}
-.grid-container .grid-row .type-128{
-    padding-top: 18px;
-    font-size: 50px;
-}
-.grid-container .grid-row .type-256{
-    padding-top: 18px;
-    font-size: 50px;
-}
-.grid-container .grid-row .type-512{
-    padding-top: 18px;
-    font-size: 50px;
-}
-.grid-container .grid-row .type-1024{
-    padding-top: 25px;
-    font-size: 40px;
-}
-.grid-container .grid-row .type-2048{
-    padding-top: 25px;
-    font-size: 40px;
 }
 
 .grid-container .mensaje{
@@ -175,23 +151,11 @@ header .puntaje .valor{
         padding: 3px;
     }
     .grid-container .grid-row .grid-cell{
-        width: 70.5px;
-        height: 70.5px;
         margin: 4px;
         float: left;
         border-radius: 5px;
-        font-size: 32px;
-        padding-top: 13px;
         text-align: center;
         font-weight: 500;
-    }
-    .grid-container .grid-row .type-1024{
-        padding-top: 16px;
-        font-size: 28px;
-    }
-    .grid-container .grid-row .type-2048{
-        padding-top: 16px;
-        font-size: 25px;
     }
     .controls{
         margin-top: 30px;

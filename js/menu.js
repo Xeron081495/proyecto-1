@@ -10,21 +10,30 @@ function ocultarMenu(){
 }
 
 function modoClasico(){
+    this.changeCss('css/color.css',0);
     this.ocultarMenu();
-    this.changeCss('css/color.css');
 }
 
 function modoOscuro(){
+    this.changeCss('css/color-black.css',0);
     this.ocultarMenu();
-    this.changeCss('css/color-black.css');
 }
 function modoExtremo(){
+    this.changeCss('css/color-extremo.css',0);
     this.ocultarMenu();
-    this.changeCss('css/color-extremo.css');
 }
 
-function changeCss(ruta){
-    var oldCss = document.getElementsByTagName("link").item(0);
+function modo3x3(){
+    this.changeCss('css/grid3x3.css',1);
+    this.ocultarMenu();
+}
+function modo4x4(){
+    this.changeCss('css/grid3x3.css',1);
+    this.ocultarMenu();
+}
+
+function changeCss(ruta,lugar){
+    var oldCss = document.getElementsByTagName("link").item(lugar);
     var newCss = document.createElement("link");
     newCss.setAttribute("rel", "stylesheet");
     newCss.setAttribute("type", "text/css");
