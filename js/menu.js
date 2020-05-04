@@ -23,12 +23,8 @@ function modoExtremo(){
     this.ocultarMenu();
 }
 
-function modo3x3(){
-    this.changeCss('css/grid3x3.css',1);
-    this.ocultarMenu();
-}
-function modo4x4(){
-    this.changeCss('css/grid3x3.css',1);
+function modoNxN(n){
+    this.changeCss('css/grid'+n+'x'+n+'.css',1);
     this.ocultarMenu();
 }
 

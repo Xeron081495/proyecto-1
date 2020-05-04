@@ -43,10 +43,7 @@ function reiniciar(){
 
 function cambiarSize(n){
     size = n;
-    if(n==3)
-        this.modo3x3();
-    else
-        this.modo4x4();
+    this.modoNxN(n);
     this.reiniciar();
     this.ocultarMenu();
 }

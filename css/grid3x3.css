@@ -28,8 +28,10 @@
     font-size: 60px;
 }
 
+#cell-4-4,#cell-4-3,#cell-4-2,#cell-4-1,#cell-4-0,
+#cell-0-4,#cell-1-4,#cell-2-4,#cell-3-4,
 #cell-3-3,#cell-3-2,#cell-3-1,#cell-3-0,
-#cell-0-3,#cell-1-3,#cell-2-3,#cell-3-3{
+#cell-0-3,#cell-1-3,#cell-2-3{
     display: none;
 }
 
@@ -60,19 +62,6 @@
     .grid-container .grid-row .type-2048{
         font-size: 37px;
         padding-top: 23px;
-    }
-    .controls{
-        margin-top: 30px;
-        height: 85px;
-        cursor: pointer;
-    }
-
-    .grid-container .mensaje{
-    }
-    
-    .grid-container .mensaje .frase{
-        font-size: 55px;
-        margin-top: 35px;
     }
 }
 
