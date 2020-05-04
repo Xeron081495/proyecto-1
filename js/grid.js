@@ -1,9 +1,9 @@
 class Grid{
-    grilla; //Matriz de tipo Celda 
-    size; // number
-    grafica; // clase de tipo Grafica
-    save; // clase de tipo Save
-    puntaje; //clas que controla puntajes
+    grilla = null; //Matriz de tipo Celda 
+    size = 4; // number
+    grafica = null; // clase de tipo Grafica
+    save = null; // clase de tipo Save
+    puntaje = null; //clas que controla puntajes
 
     constructor(size){
 

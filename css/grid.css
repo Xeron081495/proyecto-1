@@ -101,7 +101,14 @@ header .puntaje .valor{
     height: 138px;
     cursor: pointer;
 }
-
+.controls .grid-cell{
+    width: 110px !important;
+    height: 110px !important;
+    margin: 8px !important;
+    border-radius: 5px !important;
+    font-size: 50px !important;
+    padding-top: 18px !important;
+}
 
 
 @media only screen and (max-width: 1410px) {    

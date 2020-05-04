@@ -1,8 +1,7 @@
 class Save{
-    size;
-    partida;
-    last_move;
-    grafica;
+    size = 4;
+    partida = null;
+    grafica = null;
     
 
     constructor(size,grafica){
