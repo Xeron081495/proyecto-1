@@ -1,9 +1,19 @@
-//creo la celda
-let size = 4;
-let grilla = new Grid(size);
-grilla.puntaje = new Puntaje(grilla,0);
-grilla.agregarNuevo();
-grilla.agregarNuevo();
+
+// obtengo el tamaño guardado de la grilla
+let size = getSize();
+
+//creo la grilla
+crear();
+
+//seteo el estilo de la grilla
+setStyle();
+
+//seteo el tamaño de la grilla
+cambiarSize(size);
+
+//seteo si muestra o no direcciones en pantalla
+setDirecciones();
+
 
 
 /*grilla.setCelda(2,0,0);
@@ -17,6 +27,7 @@ grilla.setCelda(256,1,0);
 grilla.setCelda(512,2,0);
 grilla.setCelda(1024,2,1);*/
 
+// las proximas 4 funciones indican que movimientos hacer a la grilla (puede venir desde la parte tactil, flechas de teclado o swap en el celu)
 function moverDerecha(){
     grilla.mover(new MovimientoDerecha(grilla));
     grilla.verificarPerdida();
@@ -33,7 +44,10 @@ function moverAbajo(){
     grilla.mover(new MovimientoAbajo(grilla));
     grilla.verificarPerdida();
 }
-function reiniciar(){
+
+
+//reinicia la grilla con la configuracion actual
+function crear(){
     grilla = new Grid(size);
     grilla.puntaje = new Puntaje(grilla,0);
     grilla.grafica.reiniciar();
@@ -41,9 +55,41 @@ function reiniciar(){
     grilla.agregarNuevo();
 }
 
+//cambia el tamaño de la grilla y gaurda la configuracion
 function cambiarSize(n){
     size = n;
     modoNxN(n);
-    reiniciar();
+    crear();
     ocultarMenu();
+    localStorage.setItem('size-grid',n);
+}
+
+//obtiene el tamaño guardado del localstorage. Por defecto es el 4x4.
+function getSize(){
+    const size = localStorage.getItem('size-grid');
+    if(size==null){
+        return 4;
+    }else
+        return +size;
+}
+
+
+//seteo el estilo de la grilla
+function setStyle(){
+    const style = localStorage.getItem('style-grid');
+    if(style==null){
+        modoClasico();
+    }else{
+        changeCss(style,0);
+    }
+
+}
+
+//seteo si muestra o n odirecciones
+function setDirecciones(){
+    const dir = localStorage.getItem('direcciones');
+    if(dir!=null && dir=='true'){
+        mostrarTeclas();
+    }
+
 }

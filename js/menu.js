@@ -10,16 +10,19 @@ function ocultarMenu(){
 }
 
 function modoClasico(){
+    localStorage.setItem('style-grid','css/color.css');
     this.changeCss('css/color.css',0);
     this.ocultarMenu();
 }
 
 function modoOscuro(){
+    localStorage.setItem('style-grid','css/color-black.css');
     this.changeCss('css/color-black.css',0);
     this.ocultarMenu();
 }
 function modoExtremo(){
     this.changeCss('css/color-extremo.css',0);
+    localStorage.setItem('style-grid','css/color-extremo.css');
     this.ocultarMenu();
 }
 
@@ -39,12 +42,14 @@ function changeCss(ruta,lugar){
 
 function mostrarTeclas(){
     const menu = document.querySelector('.controls');
+    localStorage.setItem('direcciones',true);
     menu.classList.remove('d-none');
     this.ocultarMenu();
 }
 
 function ocultarTeclas(){
     const menu = document.querySelector('.controls');
+    localStorage.setItem('direcciones',false);
     menu.classList.add('d-none');
     this.ocultarMenu();
 }
