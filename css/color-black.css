@@ -104,12 +104,23 @@ header .puntaje .valor{
 
 
 .modal-content{
-    background-color: #000000 !important;
-    color: #c1c1c1 !important;
-    border: 1px solid rgba(139, 139, 139, 0.2) !important;
+    background-color: #121212 !important;
+    color: #dadada !important;
+    border: 1px solid rgba(182, 182, 182, 0.2) !important;
 }
 
 .modal-content .close{
     color: #c1c1c1 !important;
 
 }
+
+.modal-content .logo-negro{
+    display: none;
+}
+
+
+header.sub-header .boton{
+    background-color: #1d242c;
+    color: rgb(219, 219, 219); 
+}
+

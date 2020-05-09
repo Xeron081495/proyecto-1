@@ -102,3 +102,8 @@ header.sub-header .boton{
 .menu .opciones .opcion{
     border: 1px solid white;
 }
+
+
+.modal-content .logo-blanco{
+    display: none;
+}

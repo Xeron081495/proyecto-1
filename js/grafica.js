@@ -8,6 +8,10 @@ class GraficaActiva{
         this.agregarCeldas();
     }
 
+
+    /**
+     * Agregar las celdas a la pantalla depediendo del tamaño de la grilla
+     */
     agregarCeldas(){       
 
         // obtengo las filas de la grilla
@@ -99,12 +103,15 @@ class GraficaActiva{
         mensaje.classList.add('animated', 'fadeIn');
     }
 
-    //mostrar mensaje de que perdio
+    //mostrar mensaje de que perdio y ajustar header para compartir
     setGanado(){
         let mensaje = document.querySelector('.ganaste');
         mensaje.classList.remove('d-none');
         mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeIn');
+
+        
+
     }
 
     //mostrar mensaje de que perdio
