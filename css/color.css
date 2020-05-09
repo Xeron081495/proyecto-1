@@ -22,6 +22,12 @@ header .puntaje .valor{
     color: white;
 }
 
+header.sub-header .boton{
+    background-color: #bbada0;
+    color: white;    
+}
+
+
 
 .grid-container{
     background-color: #bbada0;

@@ -76,7 +76,7 @@
 }
 @media only screen and (max-width: 767px) {
     .menu .header-menu h1{
-        font-size: 24px;
+        font-size: 23px;
         padding-left: 15px !important;
         padding-top: 7px !important;
     }
@@ -92,6 +92,19 @@
 }
 
 @media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 325px) {
+    .menu .opciones .title{
+        font-size: 20px;
+    }
+    .menu .opciones .opcion{
+        font-size: 15px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 
 }
 

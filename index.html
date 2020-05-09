@@ -52,6 +52,14 @@
       </div>
     </header>
 
+    <header class="sub-header mt-4 mb-4 clearfix animated fadeInDown">
+      <span class="float-left mt-1">Juntá</span>
+      <span class="float-left mt-1 ml-1 d-none d-md-inline">los números </span> 
+      <span class="float-left mt-1 ml-1"> y llega al 2048 </span>
+      <div class="float-right boton" data-toggle="modal" data-target="#exampleModalLong"><i class="fas fa-info"></i></div>
+      <div class="float-right boton" onclick="crear()"><i class="fas fa-redo-alt"></i></div>
+    </header>
+
 
     <!-- GRILLA - MENSAJE VICTORIA - MENSAJE DERROTA -->
     <div id="grid-container" class="grid-container animated fadeInUp">
@@ -102,17 +110,64 @@
         <div class="opcion extremo" onclick="modoExtremo()">Extremo</div>
       </div>
       <div class="clearfix"></div>
-      <div class="opciones col-12 mt-5">
+      <div class="opciones col-12 mt-3 mt-sm-5">
         <div class="title clearfix">Mostrar direcciones</div>
         <div class="opcion" onclick="mostrarTeclas()">Si</div>
         <div class="opcion" onclick="ocultarTeclas()">No</div>
       </div>
       <div class="clearfix"></div>
-      <div class="opciones col-12 mt-5">
+      <div class="opciones col-12 mt-3 mt-sm-5">
         <div class="title clearfix">Cambiar tamaño</div>
         <div class="opcion" onclick="cambiarSize(5)">5x5</div>
         <div class="opcion" onclick="cambiarSize(4)">4x4</div>
         <div class="opcion" onclick="cambiarSize(3)">3x3</div>
+      </div>
+    </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Información</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-justify">            
+            <h5 class="card-title">Instrucciones</h5>
+            <p class="card-text">
+              2048 es jugado en una cuadrícula gris simple de NxN con celdas de distintos colores y con un número en su centro. Se mueve en dirección izquierda, derecha, arriba y abajo para mover las celdas, las cuales se deslizan en su totalidad por el tablero. Si dos celdas con el mismo número "colisionan" durante un movimiento, se combinarán en una nueva celda, cuyo número será el equivalente a la suma de los números de las dos celdas originales (es decir, si dos celdas con el número 4 colisionan, se combinarán en una baldosa con el número 8). Sin embargo, la celda resultante no podrá combinarse con otra baldosa nuevamente en una misma jugada. Después de realizar una jugada, aparecerá una celda nueva en un lugar vacío del tablero, la cual tendrá o bien el número 2 o el número 4. El puntaje comienza en cero y, cuando dos celdas se combinan, este se incrementa por el valor de la baldosa resultante. 2048 acaba en victoria cuando se logra obtener la celda con el número 2048 (de allí el nombre del juego)
+            </p>    
+
+            <h5 class="card-title">Estilos, tamaños y direcciones</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Estilos</h6>
+            <p class="card-text">
+              El juego cuenta con tres estilos. El modo clásico emula los colores del tradicional 2048. El modo oscuro es una nueva versión para los amantes de las versiones 'dark' o tambien para esa persona que va a jugar de noche con luces apagadas. El modo extremo es una reversión del modo oscuro, donde se enfatiza en que haya menos colores en pantalla, además de confundir al tener celdas del mismo color.
+            </p>    
+            <h6 class="card-subtitle mb-2 text-muted">Tamaños</h6>
+            <p class="card-text">
+              El juego cuenta con tres tamaños: el clásico 4x4, el 5x5 para inexpertos y 3x3 para los expertos. 
+            </p>    
+            <h6 class="card-subtitle mb-2 text-muted">Direcciones</h6>
+            <p class="card-text">
+              El juego cuenta con tres formas de mover las celdas: utilizando las teclas del teclado, utilizando las direcciones en pantalla (activar en menú) y hacer deslizar el dedo por pantalla en la dirección que se quiera mover. 
+            </p>    
+
+
+            <h5 class="card-title">Un juego de</h5>
+            <p class="card-text">
+              Esta versión del emblematico 2048 fue desarrollado por <a href="https://xeronweb.com" target="_black">Xeron Web</a>. Cualquier persona que quiere realizar mejoras lo puede hacer en el repositorio de <a href="https://github.com/Xeron081495/proyecto-1" target="_black">GitHub</a>
+            </p>
+
+            <div class="col-12 text-center"><img class="col-12 col-md-6" src="img/logo.png"></div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
 
