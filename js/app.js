@@ -25,7 +25,7 @@ grilla.setCelda(64,1,2);
 grilla.setCelda(128,1,1);
 grilla.setCelda(256,1,0);
 grilla.setCelda(512,2,0);
-grilla.setCelda(1024,2,1);
+grilla.setCelda(2048,2,1);
 
 // las proximas 4 funciones indican que movimientos hacer a la grilla (puede venir desde la parte tactil, flechas de teclado o swap en el celu)
 function moverDerecha(){
