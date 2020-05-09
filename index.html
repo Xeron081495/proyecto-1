@@ -40,7 +40,7 @@
 
     <!-- Twiter Cards -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Gané al 2048 con x puntos. ¿Te animas a ganarme?">
+    <meta id="title-twitter" name="twitter:title" content="Gané al 2048 con x puntos. ¿Te animas a ganarme?">
     <meta name="twitter:description" content="Juntá los números y llegá al 2048">
     <meta name="twitter:image:src" content="img/img-compartir.jpg">
     <!--/ Twiter Cards -->
@@ -48,7 +48,7 @@
     <!-- Open Graph -->
     <meta property="og:site_name" content="Juego 2048">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Gané al 2048 con x puntos. ¿Te animas a ganarme?" />
+    <meta id="title-facebook" property="og:title" content="Gané al 2048 con x puntos. ¿Te animas a ganarme?" />
     <meta property="og:description" content="Juntá los números y llegá al 2048">
     <meta property="og:image" content="img/img-compartir.jpg">
     <!--/ Open Graph -->
@@ -105,7 +105,7 @@
         <button type="button" class="btn btn-lg btn-dark mt-4 mt-md-5" onclick="crear()">Volver a jugar</button>
         
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="mt-5  addthis_sharing_toolbox"></div>
+        <div onclick="acomodarMeta()" class="mt-5  addthis_sharing_toolbox"></div>
             
       </div>
 

@@ -109,9 +109,6 @@ class GraficaActiva{
         mensaje.classList.remove('d-none');
         mensaje.classList.remove('animated', 'fadeOut');
         mensaje.classList.add('animated', 'fadeIn');
-
-        
-
     }
 
     //mostrar mensaje de que perdio
