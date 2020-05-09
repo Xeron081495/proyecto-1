@@ -101,3 +101,15 @@ header .puntaje .valor{
 .grid-container .mensaje .boton{
     background-color: #718599;
 }
+
+
+.modal-content{
+    background-color: #000000 !important;
+    color: #c1c1c1 !important;
+    border: 1px solid rgba(139, 139, 139, 0.2) !important;
+}
+
+.modal-content .close{
+    color: #c1c1c1 !important;
+
+}
