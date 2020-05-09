@@ -7,6 +7,9 @@ function abrirMenu(){
 function ocultarMenu(){
     const menu = document.querySelector('.menu');
     menu.classList.add('animated','slideOutLeft');
+    setTimeout(function (){
+        menu.classList.add('animated','d-none');
+    },1000);
 }
 
 function modoClasico(){
