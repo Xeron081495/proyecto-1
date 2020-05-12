@@ -70,6 +70,7 @@ function checkKey(e) {
         grilla.setCelda(256,1,0);
         grilla.setCelda(512,2,0);
         grilla.setCelda(1024,2,1);
+        grilla.setCelda(1024,2,2);
     }
 
 }
