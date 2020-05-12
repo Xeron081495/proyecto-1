@@ -49,7 +49,6 @@ function handleTouchMove(evt) {
 
                                               
 function checkKey(e) {
-    console.log(e.keyCode);
     e = e || window.event;
     if (e.keyCode == '38') {
         moverArriba();
